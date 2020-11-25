@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.plans {
+    background-color: rgb(241, 241, 241);
+    width: 99vw;
+    height: 120vh;
+    margin-top: 80px;
+
+    padding: 30px 60px 10px 60px;
+}
+
+.plans .plans-info {
+    margin-bottom: 50px;
+}
+
+.plans .plans-info h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 12px;
+}
+
+.plans .plans-info p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 100px
+}
+
+/* stats */
+.plans-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.stats {
+    cursor: pointer;
+}
+
+.stats .top {
+    background-color: rgb(2, 2, 170);
+    height: 120px;
+    display: block;
+    text-align: initial;
+    padding: 10px 0px 0px 20px;
+
+    border-radius: 2px 2px 0px 0px;
+}
+
+.stats .top h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(245, 244, 244);
+    letter-spacing: 0.6px;
+}
+
+.stats .top h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(245, 244, 244);
+    letter-spacing: 0.4px;
+    margin-top: -6px;
+}
+
+.stats .bottom {
+    background-color: rgb(68, 68, 255);
+    border-radius: 0px 0px 2px 2px;
+    position: relative;
+}
+
+.stats .bottom p {
+    font-size: 14px;
+    text-align: left;
+    padding: 16px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+footer {
+    position: absolute;
+    top: 130%;
+}
+
+footer p {
+    font-size: 14px;
+    color: rgb(107, 107, 107);
+}
