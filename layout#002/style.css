@@ -23,19 +23,20 @@ body {
 
 .sky img:nth-child(1) {
     position: absolute;
-    top: 10vh;
+    top: 50vh;
+    left: 90%;
 }
 
 .sky img:nth-child(2) {
     position: absolute;
-    top: 2vh;
-    left: 40%;
+    top: -4vh;
+    left: 10%;
 }
 
 .sky img:nth-child(3) {
     position: absolute;
-    top: 10vh;
-    left: 70%;
+    top: 50vh;
+    left: 1%;
 }
 
 .sky img:nth-child(4) {
@@ -92,6 +93,7 @@ body {
     height: 65%;
     border-radius: 20px;
     background-color: white;
+    position: relative;
 }
 
 .card-secundario .card1 {
@@ -122,7 +124,15 @@ body {
 }
 
 .card-secundario .card1 .field:nth-child(2) label {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d1c1f;
+    margin-right: 80px;
+}
+
+.card-secundario .card1 .field:nth-child(2) img {
+    width: 30px;
+    margin-left: 5px;
 }
 
 /* 3 */
@@ -134,8 +144,8 @@ body {
 
 .card-secundario .card1 .field:nth-child(3) input {
     height: 32px;
-    border-radius: 4px;
-    font-size: 18px;
+    border-radius: 6px;
+    font-size: 15px;
     line-height: 28px;
     color: #1d1c1f;
     border: 2px solid rgba(211, 152, 42, 0.5);
@@ -149,6 +159,10 @@ body {
     color: #1d1c1f;
 }
 
+.card-secundario .card1 .field:nth-child(3) input::after {
+    content: "💳";
+}
+
 /* expire */
 .card-secundario .expire  {
     display: flex;
@@ -157,4 +171,73 @@ body {
 .card-secundario .expire .field {
     display: flex;
     flex-direction: column;
+}
+
+.card-secundario .expire .field:nth-child(1) input {
+    height: 32px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #afacb5;
+    padding-left: 10px;
+    width: 250px;
+    text-transform: uppercase;
+    border: 2px solid rgba(211, 152, 42, 0.5);
+}
+
+.card-secundario .expire .field:nth-child(2) input {
+    height: 32px;
+    width: 90%;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1d1c1f;
+    border: 2px solid rgba(211, 152, 42, 0.5);
+    margin-left: 30px;
+    padding-left: 5px;
+}
+
+.card-secundario .expire .field:nth-child(1) label {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #1d1c1f;
+    margin-left: -200px;
+}
+
+.card-secundario .expire .field:nth-child(2) label {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #1d1c1f;
+    margin-left: -32px;
+}
+
+/* botao */
+.card-secundario button {
+    width: 80%;
+    height: 40px;
+    background-color: rgb(0, 145, 255);
+    border: none;
+    border-radius: 6px;
+    margin-left: 10%;
+    margin-top: 6%;
+
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.card-secundario p {
+    color: rgb(179, 178, 178);
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.card-secundario img.lock {
+    width: 14px;
 }
