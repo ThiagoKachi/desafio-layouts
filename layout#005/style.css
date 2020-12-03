@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #E8EEF2;
+}
+
+/* card principal */
+.card-principal {
+    background-color:white;
+    color: rgb(27, 27, 27);
+    border-radius: 0rem 1.2rem 1.2rem 0rem;
+    width: 70vw;
+    height: 85vh;
+    margin: 3rem auto;
+
+    display: flex;
+    position: relative;
+}
+
+/* foto e nome */
+.foto {
+    z-index: 0;
+    color: #140f0d;
+    background-color: rgba(0, 100, 0, 0.1);
+
+    width: 40%;
+    height: 100%;
+}
+
+.foto img {
+    width: 18rem;
+    height: 20rem;
+    margin-left: 4.8rem;
+    margin-top: 3rem;
+    border-radius: 0.4rem;
+}
+
+.foto h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+
+    margin-top: 1rem;
+}
+
+.foto p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: rgb(27, 27, 27);
+}
+
+.foto hr {
+    width: 100px;
+    border: 0.01px solid rgba(197, 197, 197, 0.3);
+    position: absolute;
+    bottom: 3rem;
+    left: 10.5rem;
+}
+
+/* informações */
+.infos {
+    position: absolute;
+    background-color: rgba(233, 227, 206, 0.3);
+    background-color: rgba(0, 100, 0, 0.1);
+
+    color: rgb(102, 102, 102);
+    border-radius: 0.4rem 0rem 0rem 0.4rem;
+    width: 52%;
+    height: 50%;
+    bottom: 25%;
+    right: 0;
+    padding: 2rem 3rem 0rem 5rem;
+
+}
+
+.infos h1 {
+    position: absolute;
+    top: -2rem;
+    font-size: 3rem;
+}
+
+/* infos phone */
+.infos .card1 .phone {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos .card1 .phone h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.infos .card1 .phone p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* infos email */
+.infos .card1 .email {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos .card1 .email h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.infos .card1 .email p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* infos birth */
+.infos .card1 .birth {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos .card1 .birth h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.infos .card1 .birth p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* infos occupation */
+.infos .card1 .dev {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos .card1 .dev h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.infos .card1 .dev p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* footer */
+.end-page {
+    position: absolute;
+    bottom: 1%;
+    left: 35%;
+    color: rgb(102, 102, 102);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.end-page hr {
+    width: 8rem;
+    margin-right: 1rem;
+    border: 0.11px solid rgb(219, 219, 219);
+}
+
+.end-page p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* programming languages */
+#languages {
+    margin-top: 45%;
+    margin-left: 15%;
+}
+
+#languages h2 {
+    font-size: 1.8rem;
+    color: rgb(102, 102, 102);
+
+    display: flex;
+}
+
+#languages h2 i {
+    color: black;
+    margin-left: 0.6rem;
+    cursor: pointer;
+    display: flex;
+}
+
+#languages #programming {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+
+    display: none;
+}
+
+#languages #programming img {
+    margin-left: 1rem;
+    width: 2.5rem;
+}
+
+.deco {
+    position: absolute;
+    width: 8rem;
+    top: 10%;
+    left: 65%;
+    border: 0.11px solid rgb(231, 231, 231);
+}
