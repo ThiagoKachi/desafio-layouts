@@ -1,4 +1,4 @@
-<h2 align="center">Layout 001</h2>
+<h2 align="center">Projeto 001</h2>
 
 <h4>Página de Login/Cadastro</h4>
 

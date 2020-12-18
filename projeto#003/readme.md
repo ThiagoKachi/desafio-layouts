@@ -1,4 +1,4 @@
-<h2 align="center">Layout 003</h2>
+<h2 align="center">Projeto 003</h2>
 
 <h4>Landing Page - Site fictício</h4>
 

@@ -1,4 +1,4 @@
-<h2 align="center">Layout 002</h2>
+<h2 align="center">Projeto 002</h2>
 
 <h4>Página de Cadastro de cartão de crédito</h4>
 

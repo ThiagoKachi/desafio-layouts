@@ -1,4 +1,4 @@
-<h2 align="center">Layout 007</h2>
+<h2 align="center">Projeto 007</h2>
 
 <h4>Página simples de mensagem de sucesso ou falha. Em clima natalino.</h4>
 

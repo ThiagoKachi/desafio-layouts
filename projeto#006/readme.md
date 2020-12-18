@@ -1,4 +1,4 @@
-<h2 align="center">Layout 006</h2>
+<h2 align="center">Projeto 006</h2>
 
 <h4>Página de player de música, com funcionalidade de Carousel</h4>
 
