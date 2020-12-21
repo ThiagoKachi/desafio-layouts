@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="card-principal">
+        <div class="foto">
+            <img src="https://avatars1.githubusercontent.com/u/61670495?s=460&u=9b335f52bff80b35370bba23120961c3f533f956&v=4" alt="Avatar imagem">
+            <p>Thiago Kachinsky</p>
+            <p>Santa Catarina, BR</p>
+            <hr>
+        </div>
+        
+        <hr class="deco">
+        
+        <button id="dark" onclick="dark()">Dark Mode</button>
+        <div class="infos">
+
+
+            <h1>User Profile</h1>
+
+            <div class="card1">
+                <div class="phone">
+                    <h2>Phone</h2>
+                    <p>(47) 99999-9999</p>
+                </div>
+
+                <div class="email">
+                    <h2>Email</h2>
+                    <p>tjk091@gmail.com</p>
+                </div>
+
+                <div class="birth">
+                    <h2>Birthday</h2>
+                    <p>November 20, 1996</p>
+                </div>
+
+                <div class="dev">
+                    <h2>Occupation</h2>
+                    <p>Front-end Developer</p>
+                </div>
+
+            </div>
+            
+            <div class="end-page">
+                <hr>
+                <p>por Thiago Kachinsky</p>
+            </div>
+        </div>
+
+        <div id="languages">
+            <!-- <i class="fas fa-sort-up"></i> -->
+            <h2 onclick="mostrar('programming')">Programming Languages <i class="fas fa-sort-down"></i></h2>
+            <div id="programming">
+                <img src="/img/html.png" alt="HTML">
+                <img src="/img/css.png" alt="CSS">
+                <img src="/img/file_type_js_official_icon_130509.png" alt="Javascript">
+                <img src="/img/react_original_wordmark_logo_icon_146375.png" alt="React">
+                <img src="/img/file_type_typescript_official_icon_130107.png" alt="Typescript">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
