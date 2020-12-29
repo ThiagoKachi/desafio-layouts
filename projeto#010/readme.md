@@ -1,6 +1,6 @@
 <h2 align="center">Projeto 010</h2>
 
-<h4>Projeto 005, página de apresentação com dark mode básico.</h4>
+<h4>Página de apresentação com dark mode básico.</h4>
 
 ___
 
