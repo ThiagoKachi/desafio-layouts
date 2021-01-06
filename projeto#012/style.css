@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(1, 100, 100, 0.1);
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+
+    position: static;
+
+    height: 50px;
+    width: 50px;
+    background-color: rgb(36, 36, 36);
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+button:hover {
+    background-color: rgb(52, 52, 52);
+    transition: background-color 300ms;
+}
+
+button:focus {
+    border: none;
+    outline: 0;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* container */
+.container {
+    width: 30vw;
+    height: 65vh;
+    margin: 5% auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card {
+    background-color: rgb(11, 20, 79);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+    border-radius: 6px;
+    padding: 10px;
+    padding-left: 20px;
+    color: #f1f1f5;
+}
+
+/* infos */
+#infos input {
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+
+    background-color: rgb(11, 20, 79);
+    border-bottom: 2px solid whitesmoke;
+    font-size: 26px;
+    color: whitesmoke;
+    padding-left: 3px;
+    font-weight: 600;
+}
+
+#infos input:nth-child(2) {
+    font-size: 14px;
+    color: rgb(237, 68, 120);
+}
+
+#infos input:focus {
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    outline: 0;
+}
+
+#infos input::placeholder {
+    padding-left: 3px;
+    font-size: 26px;
+    color: rgb(48, 48, 48);
+}
+
+/* select */
+#select input {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
