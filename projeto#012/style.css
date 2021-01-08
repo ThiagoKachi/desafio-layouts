@@ -7,105 +7,107 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgba(1, 100, 100, 0.1);
-    display: flex;
-    align-items: flex-start;
-    padding: 10px;
 }
 
-button {
-    background: none;
-    border: none;
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
 
-    position: static;
+.tasks {
+    width: 300px;
+    height: 405px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
 
-    height: 50px;
-    width: 50px;
-    background-color: rgb(36, 36, 36);
-    color: whitesmoke;
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+    background: #040c3a;
+    height: 70px;
+    width: 100%;
+    display: block;
+    color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-indent: 20px;
     cursor: pointer;
-    border-radius: 50%;
-    font-weight: 400;
-    font-size: 40px;
+    transition: all 0.7s ease;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 10px 0;
 }
 
-button:hover {
-    background-color: rgb(52, 52, 52);
-    transition: background-color 300ms;
-}
-
-button:focus {
-    border: none;
-    outline: 0;
-}
-
-button:active {
-    transform: scale(0.95);
-}
-
-
-/* container */
-.container {
-    width: 30vw;
-    height: 65vh;
-    margin: 5% auto;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#card {
-    background-color: rgb(11, 20, 79);
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-
-    border-radius: 6px;
-    padding: 10px;
-    padding-left: 20px;
-    color: #f1f1f5;
-}
-
-/* infos */
-#infos input {
-    border: none;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 50px;
-
-    background-color: rgb(11, 20, 79);
-    border-bottom: 2px solid whitesmoke;
-    font-size: 26px;
-    color: whitesmoke;
-    padding-left: 3px;
-    font-weight: 600;
-}
-
-#infos input:nth-child(2) {
+label h2 span {
+    display: block;
     font-size: 14px;
-    color: rgb(237, 68, 120);
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #ff4a7b;
+    margin-top: 5px;
 }
 
-#infos input:focus {
-    border: none;
-    border-bottom: 2px solid whitesmoke;
-    outline: 0;
-}
-
-#infos input::placeholder {
-    padding-left: 3px;
-    font-size: 26px;
-    color: rgb(48, 48, 48);
-}
-
-/* select */
-#select input {
+label:before {
+    content: "";
     width: 20px;
     height: 20px;
-    margin-right: 20px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    right: 20px;
+    top: 30%;
+    transition: border 0.7s ease;
+}
+
+#label-1:checked ~ label[for=label-1],
+#label-2:checked ~ label[for=label-2],
+#label-3:checked ~ label[for=label-3],
+#label-4:checked ~ label[for=label-4],
+#label-5:checked ~ label[for=label-5] {
+    background: #ff4a7b;
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+#label-1:checked ~ label[for=label-1] h2 span,
+#label-2:checked ~ label[for=label-2] h2 span,
+#label-3:checked ~ label[for=label-3] h2 span,
+#label-4:checked ~ label[for=label-4] h2 span,
+#label-5:checked ~ label[for=label-5] h2 span {
+    color: #040c3a;
+}
+
+#label-1:checked ~ label[for=label-1]::before,
+#label-2:checked ~ label[for=label-2]::before,
+#label-3:checked ~ label[for=label-3]::before,
+#label-4:checked ~ label[for=label-4]::before,
+#label-5:checked ~ label[for=label-5]::before {
+    background: url(/img/check-mark.png) no-repeat center center;
+    background-size: cover;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    
+}
+
+footer img {
+    width: 20px;
+    margin-left: 10px;
 }
